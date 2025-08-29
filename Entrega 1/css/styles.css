@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
 :root {
     --colorNegro: #000000;
+    --colorGrisOscuro: #111111;
     --colorAzul: #1e90ff;
     --colorVerde: #39ff14;
+    --colorBlanco: #ffffff;
+
+    --font-principal: 'Roboto', sans-serif;
+    --font-encabezado: 'Orbitron', sans-serif; 
 }
 
 * {
@@ -11,11 +19,68 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+.page{
     background-color: var(--colorNegro);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
-#navbar1 {
+.headerPpal {
     background-color: var(--colorNegro);
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar1 {
+    width: 100vw;
+    padding: 10px 20px;
+    background-color: var(--colorGrisOscuro);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navBarButtons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: var(--font-principal);
+    margin: 0;
+}
+
+.navBarButtons li {
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+.navBarButtons a {
+    color: var(--colorBlanco);
+    font-family: var(--font-principal);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.navBarButtons a:hover {
+    color: var(--colorAzul);
+}
+
+.logoName {
+    font-family: var(--font-encabezado);
+    font-weight: bold;
+    color: var(--colorBlanco);
+}
+
+main {
+    padding-top: 80px;
 }
