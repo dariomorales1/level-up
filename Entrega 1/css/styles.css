@@ -1,0 +1,21 @@
+:root {
+    --colorNegro: #000000;
+    --colorAzul: #1e90ff;
+    --colorVerde: #39ff14;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--colorNegro);
+}
+
+#navbar1 {
+    background-color: var(--colorNegro);
+    
+}
