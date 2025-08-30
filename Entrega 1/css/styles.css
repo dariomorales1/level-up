@@ -4,7 +4,7 @@
 :root {
     --colorNegro: #000000;
     --colorGrisOscuro: #111111;
-    --colorAzul: #1e90ff;
+    --colorAzul:    #1e90ff;
     --colorVerde: #39ff14;
     --colorBlanco: #ffffff;
 
@@ -27,7 +27,7 @@
 }
 
 .headerPpal {
-    background-color: var(--colorNegro);
+    background-color: var(--colorGrisOscuro);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,4 +83,34 @@
 
 main {
     padding-top: 80px;
+}
+
+#navbar1 {
+    background-color: var(--colorVerde);
+    border-radius: 100px;
+    width: 60vw;
+    min-width: 700px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categoria {
+    color: var(--colorNegro);
+    font-family: var(--font-principal);
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    text-align: center;
+    font-family: var(--font-encabezado);
+    color: var(--colorVerde);
+}
+
+#dropdownMenuLink:hover {
+    background-color: var(--colorNegro);
+    color: var(--colorBlanco);
+    border-radius: 10px;
+    transition: background-color 0.3s;
 }
