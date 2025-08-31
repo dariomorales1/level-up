@@ -1,6 +1,13 @@
-const contenedor = document.getElementById('productosContainer');
 
-function renderCards(lista) {
+
+function renderCards(lista, containerId="productosContainer") {
+    const contenedor = document.getElementById(containerId);
+
+    if(!contenedor) {
+        console.warn("No existe el contenedor");
+        return;
+    }
+
     contenedor.innerHTML = "";
 
     lista.forEach((p,index) => {
