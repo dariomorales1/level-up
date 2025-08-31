@@ -1,4 +1,4 @@
-const productos = [
+window.productos = [
   {
     "Código": "JM001",
     "Categoría": "Juegos de Mesa",

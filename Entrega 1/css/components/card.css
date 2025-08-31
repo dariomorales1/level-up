@@ -5,6 +5,17 @@
     align-items: center;
     min-height: 480px;
     background-color: var(--colorGrisOscuro);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px var(--colorAzul);
+}
+
+.card-body {
+  pointer-events: none;
 }
 
 .cardImg {
