@@ -7,16 +7,19 @@ document.getElementById("headerPpal").innerHTML =  `
                             class="d-inline-block align-text-center" />
                             Level-Up
                     </a>
-                    <a class="nav-link active navbarBtnTxt" aria-current="page" href="pages/login.html">Inicio</a>
+                    
                 </div>
-                <ul class="navBarButtons">
-                    <li class="nav-item">
-                        <a class="nav-link active navbarBtnTxt" aria-current="page" href="pages/login.html">Ingresar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active navbarBtnTxt" href="pages/signin.html">Registrarse</a>
-                    </li>
-                </ul>
+                <div class="navBarButtons">
+                    <div class="navBarButtonsContainer">
+                        <a class="nav-link active btnAgregarHeader" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active btnAgregarHeader" aria-current="page" href="catalogo.html">Catalogo</a>
+                    </div>
+                    
+                    <div class="navBarButtonsContainer">
+                        <a class="nav-link active btnAgregarHeader" aria-current="page" href="pages/login.html">Ingresar</a>
+                        <a class="nav-link active btnAgregarHeader" href="pages/signin.html">Registrarse</a>
+                    </div>
+                </div>
             </nav>
         </header>
 `;

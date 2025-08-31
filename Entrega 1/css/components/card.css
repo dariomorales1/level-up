@@ -3,17 +3,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
-    height: auto;
-    min-height: 520px;
+    min-height: 480px;
     background-color: var(--colorGrisOscuro);
 }
 
 .cardImg {
     margin: 10px 0px;
     border-radius: 10px;
-    width: 260px;
-    height: 260px;
+    width: 90%;
+    height: 200px;
     object-fit: contain;
     background-color: var(--colorBlanco);
     object-position: center;

@@ -5,12 +5,48 @@
     min-width: 700px;
     margin: 10px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .productosUl {
     gap: 60px; 
     font-size: 16px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.productosBarGreen {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 0;
+}
+
+@media (max-width: 1080px) {
+    .barProductos {
+        min-width: 600px;
+    }
+
+    .productosUl {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 720px) {
+    .barProductos {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .productosUl {
+        gap: 0px;
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 .productosBtn {
