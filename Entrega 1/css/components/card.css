@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 480px;
+    max-width: 400px;
     background-color: var(--colorGrisOscuro);
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -22,7 +23,7 @@
     margin: 10px 0px;
     border-radius: 10px;
     width: 90%;
-    height: 200px;
+    height: 250px;
     object-fit: contain;
     background-color: var(--colorBlanco);
     object-position: center;
