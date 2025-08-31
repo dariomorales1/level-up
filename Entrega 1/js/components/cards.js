@@ -1,28 +1,33 @@
-productos.forEach(producto => {
-    const card = document.createElement('div');
-    card.className = 'card m-3';
-    card.style.width = '18rem';
+const contenedor = document.getElementById('productosContainer');
 
-    const img = document.createElement('img');
-    img.src = producto.imageLink || 'https://via.placeholder.com/150';
-    img.className = 'card-img-top';
-    img.alt = producto.Nombre;
+function renderCards(lista) {
+    contenedor.innerHTML = "";
 
-    const cardBody = document.createElement('div');
-    cardBody.className = 'card-body';
+    lista.forEach((p,index) => {
 
-    const title = document.createElement('h5');
-    title.className = 'card-title';
-    title.textContent = producto.Nombre;
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-    const price = document.createElement('p');
-    price.className = 'card-text';
-    price.textContent = `Precio: ${producto.Precio}`;
+        card.innerHTML = `
+        
+            <div class="card">
+                <img class="cardImg" src="${p.imgLink}"
+                    class="card-img-top" alt="${p.Nombre}">
+                <div class="card-body cardContainer">
+                    <h5 class="card-title">${p.Nombre}</h5>
+                    <p class="card-text">${p.Descripción}</p>
+                    <p><strong>Precio:</strong> ${p.Precio}</p>
+                    <a href="#" class="btnAgregar">Añadir al carrito</a>
+                </div>
+            </div>
+        `;
 
-    cardBody.appendChild(title);
-    cardBody.appendChild(price);
-    card.appendChild(img);
-    card.appendChild(cardBody);
+        card.querySelector(".btnAgregar").addEventListener("click", ()=> {
+            alert(`Agregado al carrito. ${p.Nombre}`);
+        })
 
-    document.getElementById('productContainer').appendChild(card);
-});
+        contenedor.appendChild(card);
+        
+    });
+}
+
