@@ -1,38 +1,38 @@
 document.getElementById("navbarProductos").innerHTML =  `
-    <nav class="navbar navbar-expand" data-bs-theme="dark" id="navbar1">
+    <nav class="navbar navbar-expand barProductos" data-bs-theme="dark">
         <div class="container-fluid justify-content-center">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <ul class="navbar-nav productosUl">
+                <li class="nav-item dropdown productosBtn">
+                    <a class="nav-link dropdown-toggle productosBtnA" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Zona Gamer
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="pages/productos/zonaGamer/consolas.html">Consolas</a></li>
-                        <li><a class="dropdown-item" href="pages/productos/zonaGamer/computadores.html">Computadores Gamer</a></li>
-                        <li><a class="dropdown-item" href="pages/productos/zonaGamer/mouse.html">Mouse</a></li>
-                        <li><a class="dropdown-item" href="pages/productos/zonaGamer/mousepad.html">MousePad</a></li>
-                        <li><a class="dropdown-item" href="pages/productos/zonaGamer/sillas.html">Sillas Gamer</a></li>
+                        <li><a class="dropdown-item" data-category="Consolas" href="#">Consolas</a></li>
+                        <li><a class="dropdown-item" data-category="Computadores Gamers" href="#">Computadores Gamer</a></li>
+                        <li><a class="dropdown-item" data-category="Mouse" href="#">Mouse</a></li>
+                        <li><a class="dropdown-item" data-category="Mousepad" href="#">MousePad</a></li>
+                        <li><a class="dropdown-item" data-category="Sillas Gamers" href="#">Sillas Gamer</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <li class="nav-item dropdown productosBtn">
+                    <a class="nav-link dropdown-toggle productosBtnA" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Ropa y Personalizados
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="pages/productos/ropa/poleras.html">Poleras Personalizadas</a></li>
-                        <li><a class="dropdown-item" href="pages/productos/ropa/polerones.html">Polerones Gamer Personalizados</a></li>
+                        <li><a class="dropdown-item" data-category="Poleras Personalizadas" href="#">Poleras Personalizadas</a></li>
+                        <li><a class="dropdown-item" data-category="Polerones Gamers Personalizados" href="#">Polerones Gamer Personalizados</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <li class="nav-item dropdown productosBtn">
+                    <a class="nav-link dropdown-toggle productosBtnA" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Juegos y Accesorios
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="pages/productos/Juegos/accesorios.html">Accesorios</a></li>
-                        <li><a class="dropdown-item" href="pages/productos/Juegos/juegosMesa.html">Juegos de Mesa</a></li>
+                        <li><a class="dropdown-item" data-category="Accesorios" href="#">Accesorios</a></li>
+                        <li><a class="dropdown-item" data-category="Juegos de Mesa" href="#">Juegos de Mesa</a></li>
                     </ul>
                 </li>
             </ul>
@@ -40,3 +40,4 @@ document.getElementById("navbarProductos").innerHTML =  `
         </div>
     </nav>
 `;
+

@@ -1,0 +1,75 @@
+.headerPpal {
+    background-color: var(--colorGrisOscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+}
+
+.navbarPpal {
+    width: 100vw;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbarFirstContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logoName {
+    font-family: var(--font-encabezado);
+    font-weight: bold;
+    color: var(--colorBlanco);
+    transition: 
+        0.3s ease color;
+}
+
+.logoName:hover {
+    color: var(--colorVerde);
+}
+
+
+.navBarButtons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: var(--font-principal);
+    margin: 0;
+}
+
+.navBarButtons li {
+    list-style: none;
+}
+
+.navbarBtnTxt {
+    padding: 5px 10px;
+    font-family: var(--font-principal);
+    text-decoration: none;
+    color: var(--colorBlanco);    
+    border: 1px solid transparent;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    transition: 
+        0.3s ease color,
+        0.3s ease border;
+}
+
+.navbarBtnTxt:hover {
+    border: 1px solid var(--colorVerde);
+    color: var(--colorVerde);
+}
