@@ -1,0 +1,62 @@
+.producto-detalle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 16px;
+}
+.detalle-img {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 12px;
+}
+.detalle-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #fff;
+}
+
+.precio {
+    color: var(--colorVerde);
+    font-size: 18px;
+}
+
+.descripcion{
+    font-size: 18px;
+}
+
+.detalle-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 12px;
+}
+@media (max-width: 768px) {
+  .producto-detalle {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btnAgregar {
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 10px;
+    border: 1px solid var(--colorVerde);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, var(--colorVerde) 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    color: var(--colorVerde);
+    font-weight: bold;
+    transition: 
+        background 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+}
+
+.btnAgregar:hover {
+    background-position: 0;
+    color: #000;
+}
