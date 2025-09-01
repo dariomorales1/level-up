@@ -34,10 +34,21 @@ main {
     background: var(--colorNegro);
 }
 
+
 body{ 
     background: var(--colorNegro);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }  
+
+#carrousel {
+    margin: 10px 0;
+}
+
+@media (max-width: 580px) {
+    main {
+        padding: 90px 0 20px 0;
+    }
+}
 
 .titulo {
     text-align: center;

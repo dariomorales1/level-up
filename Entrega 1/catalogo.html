@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/components/navProductos.css">
     <link rel="stylesheet" href="css/components/card.css">
     <link rel="stylesheet" href="css/components/cards.css">
-    <link rel="stylesheet" href="css/components/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,36 +22,42 @@
 
 <body>
     <div class="page">
-        <!--NAVBAR_PRINCIPAL-->
+        <!--NavBar-->
         <div id="headerPpal"></div>
-        <!--CONTENIDO-->
+        <!--Contenido-->
         <main>
-            <!--<div id="navbarProductos"></div>-->
+            <div id="navbarProductos"></div>
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <!--CARROUSEL-->
+                    <!--Carrousel-->
                     <div id="carrousel"></div>
-                    <h1 class="titulo">Destacados</h1>
 
-                    <!--CARDS-->
-                    <div class="productosContainer" id="destacadosContainer"></div>
-                    <!--<div class="productosContainer" id="productosContainer"></div>-->
+                    <h1 class="titulo">Productos</h1>
+
+                    <!--cards-->
+                    <div class="productosContainer" id="productosContainer"></div>
+                    
                 </div>
                 <div class="col-2"></div>
             </div>
+
         </main>
 
-        <!--FOOTER-->
-        <div id="app-footer"></div>
-        
+
+        <!--Footer-->
+        <footer style="background-color: var(--colorGrisOscuro);">
+            <div class="container-fluid text-center p-3" style="color: var(--colorVerde)">
+                © 2025 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/"> Level-Up Gamer</a>
+            </div>
+        </footer>
     </div>
 
     <script src="script.js"></script>
     <script src="js/components/headerPpal.js"></script>
     <script src="js/components/navbarProductos.js"></script>
     <script src="js/components/carrousel.js"></script>
-    <script src="js/components/footer.js"></script>
 
     <script src="js/utils/productosDestacados.js"></script>
     <script src="js/utils/products.js"></script>
@@ -61,11 +66,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous">
-    </script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 .headerPpal {
     background-color: var(--colorGrisOscuro);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -11,13 +11,14 @@
 }
 
 .navbarPpal {
-    width: 100vw;
+    width: 100%;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     align-items: center;
     flex-direction: row;
+    justify-content: center;
 }
 
 .navbarFirstContainer {
@@ -31,45 +32,70 @@
 .logoName {
     font-family: var(--font-encabezado);
     font-weight: bold;
-    color: var(--colorBlanco);
+    font-size: 20px;
+    color: var(--colorVerde);
     transition: 
         0.3s ease color;
 }
 
 .logoName:hover {
-    color: var(--colorVerde);
+    color: var(--colorBlanco);
 }
 
 
 .navBarButtons {
     display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     font-family: var(--font-principal);
-    margin: 0;
 }
 
-.navBarButtons li {
-    list-style: none;
+.navBarButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbarBtnTxt {
-    padding: 5px 10px;
-    font-family: var(--font-principal);
-    text-decoration: none;
-    color: var(--colorBlanco);    
-    border: 1px solid transparent;
-    font-size: 16px;
-    letter-spacing: 1px;
+@media (max-width: 580px) {
+    .navBarButtonsContainer {
+        flex-direction: column;
+        gap: 10px;  
+    }
 
-    transition: 
-        0.3s ease color,
-        0.3s ease border;
+    .btnAgregarHeader {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .logoName {
+        font-size: 0;
+    }
 }
 
-.navbarBtnTxt:hover {
+.btnAgregarHeader {
+    margin: auto;
+    margin-bottom: 0;
     border: 1px solid var(--colorVerde);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, var(--colorVerde) 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
     color: var(--colorVerde);
+    font-weight: bold;
+    transition: 
+        background 0.2s ease-in-out,
+        color 0.2s ease-in-out;
 }
+
+.btnAgregarHeader:hover {
+    background-position: 0;
+    color: #000;
+}
+

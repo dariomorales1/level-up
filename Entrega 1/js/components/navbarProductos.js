@@ -1,6 +1,6 @@
 document.getElementById("navbarProductos").innerHTML =  `
     <nav class="navbar navbar-expand barProductos" data-bs-theme="dark">
-        <div class="container-fluid justify-content-center">
+        <div class="container productosBarGreen">
             <ul class="navbar-nav productosUl">
                 <li class="nav-item dropdown productosBtn">
                     <a class="nav-link dropdown-toggle productosBtnA" href="#" role="button" data-bs-toggle="dropdown"

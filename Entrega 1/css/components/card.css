@@ -3,17 +3,27 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
-    height: auto;
-    min-height: 520px;
+    min-height: 480px;
+    max-width: 400px;
     background-color: var(--colorGrisOscuro);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px var(--colorAzul);
+}
+
+.card-body {
+  pointer-events: none;
 }
 
 .cardImg {
     margin: 10px 0px;
     border-radius: 10px;
-    width: 260px;
-    height: 260px;
+    width: 90%;
+    height: 250px;
     object-fit: contain;
     background-color: var(--colorBlanco);
     object-position: center;
