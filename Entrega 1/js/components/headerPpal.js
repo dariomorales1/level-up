@@ -16,8 +16,8 @@ document.getElementById("headerPpal").innerHTML =  `
                     </div>
                     
                     <div class="navBarButtonsContainer">
-                        <a class="nav-link active btnAgregarHeader" aria-current="page" href="pages/login.html">Ingresar</a>
-                        <a class="nav-link active btnAgregarHeader" href="pages/signin.html">Registrarse</a>
+                        <a class="nav-link active btnAgregarHeader" aria-current="page" href="auth/login.html">Ingresar</a>
+                        <a class="nav-link active btnAgregarHeader" href="auth/register.html">Registrarse</a>
                     </div>
                 </div>
             </nav>

@@ -33,7 +33,7 @@
     font-family: var(--font-encabezado);
     font-weight: bold;
     font-size: 20px;
-    color: var(--colorVerde);
+    color: var(--colorBlanco);
     transition: 
         0.3s ease color;
 }
