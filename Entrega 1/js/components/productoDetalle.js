@@ -25,13 +25,36 @@
       <div class="detalle-body">
         <h1>${p.Nombre}</h1>
         <p class="precio"><strong>Precio:</strong> ${p.Precio}</p>
-        <p class="descripcion">${p.Descripción}</p>
+        <p class="descripcion">${p["Descripción Larga"]}</p>
         <div class="detalle-actions">
           <a id="btnAdd" class="btnAgregar">Añadir al carrito</a>
           <a href="index.html" class="btnAgregar">← Volver</a>
         </div>
       </div>
     </article>
+
+    <section class="producto-detalle">
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Especificaciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JM001</td>
+            </tr>
+            <tr>
+              <td>JM002</td>
+            </tr>
+            <tr>
+              <td>JM003</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
   `;
 
   // 4) acción simple
