@@ -13,9 +13,6 @@ document.getElementById('carrousel').innerHTML = `
             <div class="carousel-item">
                 <img src="assets/img/banner/banner4.png" class="d-block w-100" alt="Banner AMD">
             </div>
-            <div class="carousel-item">
-                <img src="assets/img/banner/banner5.jpg" class="d-block w-100" alt="Banner TP-Link">
-            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

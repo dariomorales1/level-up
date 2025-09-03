@@ -109,7 +109,7 @@
 /*estrellas*/
 
 #estrellas {
-  color: var(--colorVerde);
+  color: rgb(255, 215, 0);
   font-size: 20px;
   text-align: center;
   display: flex;
@@ -122,4 +122,5 @@
 .estrellasTitulo {
   margin: 0;
   font-size: 20px;
+  color: var(--colorVerde);
 }
