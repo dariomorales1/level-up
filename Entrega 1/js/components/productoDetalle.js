@@ -1,23 +1,25 @@
-// js/components/productoDetalle.js
 (() => {
   const cont = document.getElementById("detalleProducto");
 
-  // 1) código desde la URL (JM001, etc.)
   const params = new URLSearchParams(location.search);
   const codigo = (params.get("codigo") || "").trim().toUpperCase();
 
-  // 2) buscar producto (acepta Código o Codigo)
   const p = window.productos.find(x =>
     String(x.Código ?? x.Codigo).toUpperCase() === codigo
   );
 
-  // 3) render mínimo
   if (!p) {
     cont.innerHTML = `<p>Producto no encontrado.</p>`;
     return;
   }
 
   const code = String(p.Código ?? p.Codigo).toLowerCase();
+
+  const columnas = p["Especificaciones"].map((especificacion) => `
+    <tr>
+      <td>${especificacion}</td>
+    </tr>
+  `).join("");
 
   cont.innerHTML = `
     <article class="producto-detalle">
@@ -42,15 +44,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>JM001</td>
-            </tr>
-            <tr>
-              <td>JM002</td>
-            </tr>
-            <tr>
-              <td>JM003</td>
-            </tr>
+            ${columnas}
           </tbody>
         </table>
       </div>

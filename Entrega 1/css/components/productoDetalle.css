@@ -60,3 +60,30 @@
     background-position: 0;
     color: #000;
 }
+
+/*talba*/
+
+table {
+  width: 80%;                  /* ancho de la tabla */
+  margin: 20px auto;           /* centrado */
+  border-collapse: collapse;   /* junta los bordes */
+  background-color: var(--colorNegro);      /* fondo */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th {
+  background-color: var(--colorGrisOscuro);      /* cabecera oscura */
+  color: #fff;
+}
+
+th, td {
+  padding: 12px 15px;          /* espacio interno */
+  border: 1px solid var(--colorVerde);      /* bordes grises */
+  text-align: center;
+  background-color: var(--colorNegro);
+  color: #ddd;
+}
+th {
+  background-color: var(--colorVerde);      /* cabecera oscura */
+  color: var(--colorNegro);
+}

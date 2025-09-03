@@ -1,3 +1,8 @@
+
+const user1 = "admin";
+const password1 = "123456"; 
+
+
 (function () {
     const makeToast = (title, body, success = true, delay = 2000) => {
     let holder = document.getElementById('toastHolder');
@@ -42,14 +47,30 @@
   form?.addEventListener('submit', (e) => {
     e.preventDefault();
     if (!form.checkValidity()) {
+
+      //datos de usuario
+      const loginEmail = document.getElementById("loginEmail").value;
+      const loginPassword = document.getElementById("loginPassword").value;
+
+
+      if (loginEmail === user1 && loginPassword === password1) {
+        
+        makeToast('Bienvenido', 'Inicio de sesión correcto.');
+        setTimeout(() => {
+          window.location.href = 'index.html';
+        }, 1200);
+        return;
+      }
+
+      makeToast('Ups', 'Datos Invalidos.', false);
+      return;
+
+    }
+    else {
       form.classList.add('was-validated');
       makeToast('Ups', 'Revisa los campos requeridos.', false);
       return;
     }
-
-    makeToast('Bienvenido', 'Inicio de sesión correcto.');
-    setTimeout(() => {
-      window.location.href = 'index.html';
-    }, 1200);
+    
   });
 })();
