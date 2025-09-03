@@ -21,6 +21,7 @@ document.getElementById('app-footer').innerHTML = `
           <li><a href="pages/contacto/contacto.html">Contáctanos</a></li>
           <li><a href="pages/contacto/garantia.html">Nuestras garantías</a></li>
           <li><a href="pages/contacto/terminos.html">Términos y condiciones</a></li>
+          <li><a href="pages/contacto/blog.html">Blog</a></li>
         </ul>
       </div>
 

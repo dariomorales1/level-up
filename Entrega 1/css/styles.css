@@ -1,7 +1,8 @@
 :root {
     --colorNegro: #000000;
     --colorGrisOscuro: #111111;
-    --colorAzul:    #1e90ff;
+    /*--colorAzul:    #1e90ff;*/
+    --colorAzul: #00ffff;
     --colorVerde: #39ff14;
 
 
