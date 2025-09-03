@@ -61,29 +61,65 @@
     color: #000;
 }
 
-/*talba*/
+/*tabla 1*/
 
-table {
-  width: 80%;                  /* ancho de la tabla */
-  margin: 20px auto;           /* centrado */
-  border-collapse: collapse;   /* junta los bordes */
-  background-color: var(--colorNegro);      /* fondo */
+.TablaEsp {
+  width: 80%;                  
+  margin: 20px auto;
+  margin-top: 0;         
+  border-collapse: collapse;    
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-th {
-  background-color: var(--colorGrisOscuro);      /* cabecera oscura */
-  color: #fff;
-}
-
-th, td {
-  padding: 12px 15px;          /* espacio interno */
-  border: 1px solid var(--colorVerde);      /* bordes grises */
+.tituloTablaEsp, .celdaTablaEsp, .tituloTablaCom, .celdaTablaCom {
+  padding: 12px 15px;          
+  border: 1px solid var(--colorVerde);      
   text-align: center;
   background-color: var(--colorNegro);
   color: #ddd;
 }
-th {
-  background-color: var(--colorVerde);      /* cabecera oscura */
+.tituloTablaEsp {
+  background-color: var(--colorVerde);     
   color: var(--colorNegro);
+}
+
+/*seccion derecha*/
+
+.seccionDerecha {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*tabla 2*/
+
+.TablaCom {
+  width: 100%;
+}
+
+.tituloTablaCom {
+  background-color: var(--colorAzul);
+  color: #000;
+}
+
+.tituloTablaCom, .celdaTablaCom {      
+  border: 1px solid var(--colorAzul);
+  padding: 8px 10px;
+}
+
+/*estrellas*/
+
+#estrellas {
+  color: var(--colorVerde);
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.estrellasTitulo {
+  margin: 0;
+  font-size: 20px;
 }

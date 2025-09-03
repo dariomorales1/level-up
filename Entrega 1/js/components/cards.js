@@ -28,9 +28,14 @@ function renderCards(lista, containerId="productosContainer") {
             </div>
         `;
 
-        card.querySelector(".btnAgregar").addEventListener("click", ()=> {
+    
+        card.querySelector(".btnAgregar").addEventListener("click", (e)=> {
             alert(`Agregado al carrito. ${p.Nombre}`);
+            e.preventDefault();
+            e.stopPropagation();
+            Cart.add(p,1)
         })
+
 
         contenedor.appendChild(card);
         
