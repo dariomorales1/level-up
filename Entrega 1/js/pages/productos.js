@@ -16,7 +16,3 @@ document.querySelectorAll(".dropdown-item[data-category]").forEach(item => {
 
 
 
-
-
-
-

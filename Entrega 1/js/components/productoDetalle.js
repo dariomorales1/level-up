@@ -57,7 +57,7 @@
     );
   }
 
-  // Bloque de estrellas (ojo con cerrar bien el div)
+  // Bloque de estrellas (cerrar bien el div)
   const estrellas = `
     <h6>Puntuación:</h6>
     <div id="puntuacion" class="rating">${renderEstrellas(p.Puntuacion)}</div>
