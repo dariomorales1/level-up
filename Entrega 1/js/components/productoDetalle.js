@@ -118,8 +118,9 @@
   `;
 
   document.getElementById("btnAdd")?.addEventListener("click", () => {
-    alert(`Agregado: ${p.Nombre}`);
+    
     Cart.add(p,1);
+    alert(`Agregado: ${p.Nombre}`);
   });
 })();
 

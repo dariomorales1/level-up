@@ -23,9 +23,14 @@
   box-sizing: border-box;
 }
 
+body{ 
+    background: var(--colorNegro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}  
+
 .page{
     background-color: var(--colorNegro);
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow-x: clip;
 }
@@ -36,10 +41,7 @@ main {
 }
 
 
-body{ 
-    background: var(--colorNegro);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}  
+
 
 #carrousel {
     margin: 10px 0;
@@ -58,3 +60,7 @@ body{
 }
 
 .footer a:hover { color: var(--colorBlanco); }
+
+hr {
+    color: var(--colorVerde);
+}

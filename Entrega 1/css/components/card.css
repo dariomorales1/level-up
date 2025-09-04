@@ -1,23 +1,29 @@
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     min-height: 480px;
     max-width: 400px;
     background-color: var(--colorGrisOscuro);
     cursor: pointer;
     transition: transform 0.2s ease;
+    padding: 50px auto;
+}
+
+.linkCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorGrisOscuro);
+    cursor: pointer;
     z-index: 2;
 }
 
 .card:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 12px var(--colorAzul);
-}
-
-.card-body {
-  pointer-events: none;
 }
 
 .cardImg {
@@ -37,12 +43,51 @@
     align-items: center;
     color: white;
     text-align: center;
-    flex: 1;
     width: 100%;
+    padding-bottom: 0;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 48px;              /* espacio para 2 líneas */
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;         /* máx. 2 líneas */
+    -webkit-box-orient: vertical;
+}
+
+.card-text {
+    font-size: 12px;
+    min-height: 60px;              /* reserva espacio fijo */
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;         /* máx. 3 líneas */
+    -webkit-box-orient: vertical;
+}
+
+.card-precio {
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 24px; 
+    margin-bottom: 0;
+}
+
+.cardFooter {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 80px;
 }
 
 .btnAgregar {
-    margin-top: auto;
+    margin-top: 15px;
     margin-bottom: 10px;
     border: 1px solid var(--colorVerde);
     padding: 5px 10px;
