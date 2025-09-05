@@ -33,8 +33,7 @@
 
   // estrella
 
-    function renderEstrellas(puntos) {
-    // 1) Normaliza a número
+  function renderEstrellas(puntos) {
     const nRaw = parseFloat(puntos);
     const n = isNaN(nRaw) ? 0 : nRaw;
 
@@ -118,9 +117,8 @@
   `;
 
   document.getElementById("btnAdd")?.addEventListener("click", () => {
-    
     Cart.add(p,1);
-    alert(`Agregado: ${p.Nombre}`);
+    showToast(p.Nombre);
   });
 })();
 
