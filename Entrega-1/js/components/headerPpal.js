@@ -40,7 +40,7 @@ function renderHeaderNav() {
             ${
               user
                 ? `
-                  <a class="nav-link active btnAgregarHeader" href="auth/account.html">
+                  <a class="nav-link active btnAgregarHeader" href="/Entrega-1/cuenta.html">
                     ${user.name ? `Hola, ${user.name}` : "Cuenta"}
                   </a>
                   <a id="logoutBtn" class="nav-link active btnAgregarHeader" href="#">Cerrar sesión</a>
@@ -78,9 +78,11 @@ function renderHeaderNav() {
     </div>
   `;
 
-  // --- listeners del header recién inyectado ---
+  
+
   document.getElementById("logoutBtn")?.addEventListener("click", (e) => {
     e.preventDefault();
+    window.location.href = "index.html"
     logout();
   });
 
@@ -115,10 +117,9 @@ function renderHeaderNav() {
 
   document.getElementById("comprarCarro")?.addEventListener("click", () => {
     // aquí podrías redirigir a checkout.html o mostrar un toast
-    // showToast?.("🧾 Próximamente: Checkout");
+    showToast?.("🧾 Próximamente: Checkout");
   });
 
-  // Actualiza el numerito si Cart existe
   if (window.updateCartBadge) updateCartBadge();
 }
 
