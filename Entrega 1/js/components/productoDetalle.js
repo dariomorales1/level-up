@@ -13,6 +13,13 @@
     return;
   }
 
+  const btnAdd = document.getElementById("btnAdd");
+
+  btnAdd?.addEventListener("click", () => {
+    Cart.add(p, 1);
+    showToast?.(`🛒 Agregado: ${p.Nombre}`);
+  });
+
   // Columnas de la tabla de especificaciones
 
   const code = String(p.Código ?? p.Codigo).toLowerCase();
