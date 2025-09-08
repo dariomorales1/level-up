@@ -6,13 +6,16 @@
   // Toast Bootstrap
   function makeToast(title, body, success = true, delay = 2000) {
     let holder = document.getElementById('toastHolder');
+    
     if (!holder) {
       holder = document.createElement('div');
       holder.id = 'toastHolder';
       holder.className = 'toast-container position-fixed bottom-0 end-0 p-3';
       document.body.appendChild(holder);
     }
+
     const toast = document.createElement('div');
+    
     toast.className = 'toast align-items-center text-bg-' + (success ? 'success' : 'danger') + ' border-0';
     toast.setAttribute('role', 'alert');
     toast.setAttribute('aria-live', 'assertive');

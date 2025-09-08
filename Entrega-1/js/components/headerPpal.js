@@ -36,7 +36,7 @@ function renderHeaderNav() {
             ${
               user
                 ? `
-                  <a class="nav-link active btnAgregarHeader" href="auth/account.html">
+                  <a class="nav-link active btnAgregarHeader" href="/Entrega-1/cuenta.html">
                     ${user.name ? `Hola, ${user.name}` : "Cuenta"}
                   </a>
                   <a id="logoutBtn" class="nav-link active btnAgregarHeader" href="#">Cerrar sesión</a>
@@ -74,8 +74,14 @@ function renderHeaderNav() {
     </div>
   `;
 
+<<<<<<< HEAD:Entrega 1/js/components/headerPpal.js
+=======
+  
+
+>>>>>>> 8e3180d6a5b3f2bbc989d76cb7fa8008017065c3:Entrega-1/js/components/headerPpal.js
   document.getElementById("logoutBtn")?.addEventListener("click", (e) => {
     e.preventDefault();
+    window.location.href = "index.html"
     logout();
   });
 
@@ -107,6 +113,11 @@ function renderHeaderNav() {
   });
 
   document.getElementById("comprarCarro")?.addEventListener("click", () => {
+<<<<<<< HEAD:Entrega 1/js/components/headerPpal.js
+=======
+    // aquí podrías redirigir a checkout.html o mostrar un toast
+    showToast?.("🧾 Próximamente: Checkout");
+>>>>>>> 8e3180d6a5b3f2bbc989d76cb7fa8008017065c3:Entrega-1/js/components/headerPpal.js
   });
 
   if (window.updateCartBadge) updateCartBadge();
