@@ -1,9 +1,8 @@
-/* Página Garantía */
 .garantia {
   color: #d6d6d6;
 }
 
-.garantia__content {
+.garantia_contenido {
   background: var(--colorGrisOscuro);
   border: 1px solid rgba(255,255,255,.06);
   border-radius: 18px;
@@ -16,29 +15,4 @@
 
 .garantia strong {
   color: var(--colorBlanco);
-}
-
-.garantia__subtitle {
-  font-family: var(--font-encabezado);
-  color: var(--colorVerde);
-  font-size: 1.1rem;
-  margin-top: 1.25rem;
-  margin-bottom: .5rem;
-}
-
-.garantia__list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: .75rem;
-}
-.garantia__list li { margin: .25rem 0; }
-
-.garantia a {
-  color: #9fd7ff;
-  text-decoration: none;
-  border-bottom: 1px dashed rgba(159,215,255,.4);
-}
-.garantia a:hover {
-  color: var(--colorVerde);
-  border-bottom-color: transparent;
 }

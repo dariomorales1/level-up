@@ -1,7 +1,6 @@
 (function () {
-  // Insertar un navbar de productos si algún día lo quieres aquí, o dejar sólo header/footer.
-  
-  const form = document.getElementById('contactForm');
+
+  const form = document.getElementById('contactoForm');
 
   const makeToast = (title, body, success = true) => {
     

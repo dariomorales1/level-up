@@ -1,17 +1,17 @@
 document.getElementById('app-footer').innerHTML = `
 <footer class="footer">
-  <div class="footer__container">
-    <div class="footer__top">
+  <div class="footer_container">
+    <div class="footer_top">
       <div class="footer-col">
-        <div class="footer__brand">
-          <img src="assets/icons/icono.png" alt="Level-Up Gamer" class="footer__logo">
+        <div class="footer_brand">
+          <img src="assets/icons/icono.png" alt="Level-Up Gamer" class="footer_logo">
         </div>
 
-        <p class="footer__label">Síguenos:</p>
+        <p class="footer_label">Síguenos:</p>
         <div class="social">
-          <a href="#" class="social__btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="social__btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" class="social__btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="social_btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social_btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social_btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
       
@@ -27,7 +27,7 @@ document.getElementById('app-footer').innerHTML = `
 
       <div class="footer-col">
         <h4 class="heading">Contáctenos</h4>
-        <ul class="contact">
+        <ul class="contacto">
           <li><a href="mailto:consultas@levelupgamer.cl">consultas@levelupgamer.cl</a></li>
           <li><a href="mailto:ventas@levelupgamer.cl">ventas@levelupgamer.cl</a></li>
           <li><a href="tel:+56999999999">+56 9 9999 9999</a></li>
@@ -40,17 +40,13 @@ document.getElementById('app-footer').innerHTML = `
 
     <hr class="divider">
 
-    <div class="footer__bottom">
-      <div class="copy">© Level-Up Gamer, 2025. Todos los derechos reservados.</div>
-      <div class="pay">
+    <div class="footer_bajo">
+      <div class="derechosreservados">© Level-Up Gamer, 2025. Todos los derechos reservados.</div>
+      <div class="pagos">
         <img src="assets/img/pagos/mercado-pago.png" alt="Mercado Pago">
         <img src="assets/img/pagos/webpay.png" alt="WebPay">
       </div>
     </div>
   </div>
-
-  <a href="https://wa.me/56999999999" target="_blank" rel="noopener" class="wa" aria-label="¿Cómo puedo ayudarte?">
-    <i class="fa-brands fa-whatsapp"></i><span class="wa__text">¿Cómo puedo ayudarte?</span>
-  </a>
 </footer>
 `;

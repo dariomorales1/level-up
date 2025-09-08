@@ -1,7 +1,5 @@
-// --- utils de sesión (simples) ---
-
 function logout() {
-  // si tienes helper global:
+
   if (typeof setCurrentUser === "function") setCurrentUser(null);
   else localStorage.removeItem("session_user");
 
@@ -9,8 +7,6 @@ function logout() {
   renderHeaderNav();
 }
 
-
-// --- render dinámico del header + drawer ---
 function renderHeaderNav() {
   const user = getCurrentUser();
   const header = document.getElementById("headerPpal");
@@ -46,8 +42,8 @@ function renderHeaderNav() {
                   <a id="logoutBtn" class="nav-link active btnAgregarHeader" href="#">Cerrar sesión</a>
                 `
                 : `
-                  <a class="nav-link active btnAgregarHeader" href="auth/login.html">Ingresar</a>
-                  <a class="nav-link active btnAgregarHeader" href="auth/register.html">Registrarse</a>
+                  <a class="nav-link active btnAgregarHeader" href="./pages/auth/login.html">Ingresar</a>
+                  <a class="nav-link active btnAgregarHeader" href="./pages/auth/register.html">Registrarse</a>
                 `
             }
           </div>
@@ -78,15 +74,17 @@ function renderHeaderNav() {
     </div>
   `;
 
+<<<<<<< HEAD:Entrega 1/js/components/headerPpal.js
+=======
   
 
+>>>>>>> 8e3180d6a5b3f2bbc989d76cb7fa8008017065c3:Entrega-1/js/components/headerPpal.js
   document.getElementById("logoutBtn")?.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.href = "index.html"
     logout();
   });
 
-  // Si ya tienes lógica del carrito en carrito.js, solo dispara sus funciones si existen:
   const drawer   = document.getElementById("cartDrawer");
   const btnOpen  = document.getElementById("openCart");
   const btnClose = document.getElementById("cerrarCarro");
@@ -109,19 +107,20 @@ function renderHeaderNav() {
     if (e.key === "Escape" && drawer?.classList.contains("show")) closeDrawer();
   });
 
-  // Botones del carrito
   document.getElementById("vaciarCart")?.addEventListener("click", () => {
     if (!window.Cart) return;
     Cart.clear ? Cart.clear() : (Cart.state.items = [], Cart.save?.(), window.renderCart?.());
   });
 
   document.getElementById("comprarCarro")?.addEventListener("click", () => {
+<<<<<<< HEAD:Entrega 1/js/components/headerPpal.js
+=======
     // aquí podrías redirigir a checkout.html o mostrar un toast
     showToast?.("🧾 Próximamente: Checkout");
+>>>>>>> 8e3180d6a5b3f2bbc989d76cb7fa8008017065c3:Entrega-1/js/components/headerPpal.js
   });
 
   if (window.updateCartBadge) updateCartBadge();
 }
 
-// Render inicial
 renderHeaderNav();

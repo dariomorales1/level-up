@@ -1,6 +1,5 @@
 (function () {
-  //const B = window.ASSET_BASE || '../../';
-
+  
   const makeToast = (title, body, success = true, delay = 2200) => {
     let holder = document.getElementById('toastHolder');
     if (!holder) {
