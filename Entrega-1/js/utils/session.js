@@ -1,4 +1,3 @@
-// session.js (versión global)
 const SESSION_KEY = "session_user";
 
 function getCurrentUser() {
