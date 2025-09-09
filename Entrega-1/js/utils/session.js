@@ -1,17 +1,13 @@
 const SESSION_KEY = "session_user";
 
 function getCurrentUser() {
-  try { 
-    return JSON.parse(localStorage.getItem(SESSION_KEY)) || null; }
-  catch { 
-    return null; }
+  try { return JSON.parse(localStorage.getItem(SESSION_KEY)) || null; }
+  catch { return null; }
 }
 
 function setCurrentUser(userObj) {
-  if (userObj) 
-    localStorage.setItem(SESSION_KEY, JSON.stringify(userObj));
-  else 
-    localStorage.removeItem(SESSION_KEY);
+  if (userObj) localStorage.setItem(SESSION_KEY, JSON.stringify(userObj));
+  else localStorage.removeItem(SESSION_KEY);
 }
 
 function getCartKeyForUser(user) {
