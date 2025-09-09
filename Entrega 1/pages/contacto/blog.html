@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/components/headerPpal.css">
     <link rel="stylesheet" href="css/components/footer.css">
     <link rel="stylesheet" href="css/components/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -25,19 +26,15 @@
 
             <div class="container-xxl blog">
                 <header class="blog__header">
+                    <hr>
                     <h1 class="titulo mb-1">Blog Noticias 2025</h1>
+                    <hr>
                     <p class="text-muted mb-0">Actualizado: <span id="lastUpdate"></span></p>
                 </header>
 
                 <section class="blog__list">
                     
                     <article class="blog-card">
-                        <a class="blog-card__thumb"
-                            href="https://hothardware.com/news/acer-unveils-high-octane-nitro-and-predator-gaming-pcs-720hz-oled-monitor"
-                            target="_blank" rel="noopener">
-                            <img src="../../img/blog/acer-720hz-oled.jpg" alt="Acer Predator/Nitro y monitor OLED 720Hz"
-                                loading="lazy" width="1280" height="720">
-                        </a>
                         <h2 class="blog-card__title">Acer presenta hardware gamer y monitor OLED de hasta 720Hz</h2>
                         <p class="blog-card__meta">IFA 2025 · Monitores y PCs ·
                             <a class="blog-card__source"
@@ -53,12 +50,6 @@
 
                     
                     <article class="blog-card">
-                        <a class="blog-card__thumb" href="https://hothardware.com/news/geforce-rtx-5070-deal-below-msrp"
-                            target="_blank" rel="noopener">
-                            <img src="../../img/blog/rtx-5070-deals.jpg"
-                                alt="Ofertas RTX 5070/5070 Ti por debajo del MSRP" loading="lazy" width="1280"
-                                height="720">
-                        </a>
                         <h2 class="blog-card__title">Bajan precios en GPUs RTX 50: ofertas bajo MSRP</h2>
                         <p class="blog-card__meta">GPUs ·
                             <a class="blog-card__source"
@@ -74,13 +65,6 @@
 
                     
                     <article class="blog-card">
-                        <a class="blog-card__thumb"
-                            href="https://www.pcgamer.com/hardware/gaming-monitors/after-running-an-oled-monitor-for-533-days-seven-hours-and-22-minutes-straight-msi-claims-the-effects-of-burn-in-on-its-displays-are-basically-none/"
-                            target="_blank" rel="noopener">
-                            <img src="../../img/blog/msi-oled-burnin.jpg"
-                                alt="Monitores OLED MSI con burn-in prácticamente nulo" loading="lazy" width="1280"
-                                height="720">
-                        </a>
                         <h2 class="blog-card__title">MSI dice que el burn-in en sus OLED es “prácticamente nulo”</h2>
                         <p class="blog-card__meta">Monitores ·
                             <a class="blog-card__source"
@@ -96,13 +80,6 @@
 
                     
                     <article class="blog-card">
-                        <a class="blog-card__thumb"
-                            href="https://nintendowire.com/news/2025/09/03/hollow-knight-silksong-will-have-a-free-upgrade-pack-for-switch-2/"
-                            target="_blank" rel="noopener">
-                            <img src="../../img/blog/silksong-switch2.jpg"
-                                alt="Silksong con upgrade gratis para Switch 2" loading="lazy" width="1280"
-                                height="720">
-                        </a>
                         <h2 class="blog-card__title">Silksong tendrá upgrade gratis a Switch 2</h2>
                         <p class="blog-card__meta">Nintendo ·
                             <a class="blog-card__source"
@@ -118,13 +95,6 @@
 
                     
                     <article class="blog-card">
-                        <a class="blog-card__thumb"
-                            href="https://arstechnica.com/gaming/2025/08/todays-game-consoles-are-historically-overpriced/"
-                            target="_blank" rel="noopener">
-                            <img src="../../img/blog/overpriced-consoles-2025.jpg"
-                                alt="Consolas 2025 más caras que la tendencia histórica" loading="lazy" width="1280"
-                                height="720">
-                        </a>
                         <h2 class="blog-card__title">Las consolas actuales están “históricamente caras”</h2>
                         <p class="blog-card__meta">Mercado ·
                             <a class="blog-card__source"
@@ -142,8 +112,10 @@
 
         <div id="app-footer"></div>
     </div>
-
+    <script src="js/utils/session.js"></script>
     <script src="js/components/headerPpal.js"></script>
+    <script src="js/components/carrito.js"></script>
+    <script src="js/components/salirCarrito.js"></script>
     <script src="js/components/footer.js"></script>
     <script src="js/pages/blog.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

@@ -9,9 +9,9 @@ document.getElementById('app-footer').innerHTML = `
 
         <p class="footer_label">Síguenos:</p>
         <div class="social">
-          <a href="#" class="social_btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="social_btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" class="social_btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://instagram.com/levelupgamer.cl" class="social_btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com/levelupgamer.cl" class="social_btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.tiktok.com/search?q=levelupgamer" class="social_btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
       

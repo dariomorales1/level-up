@@ -52,7 +52,6 @@ function renderCards(lista, containerId="productosContainer") {
         card.querySelector(".btnAgregar").addEventListener("click", (e)=> {
             e.preventDefault();
             e.stopPropagation();
-            Cart.add(p,1);
             showToast(p.Nombre)
         })
 

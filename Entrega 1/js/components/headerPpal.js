@@ -36,7 +36,7 @@ function renderHeaderNav() {
             ${
               user
                 ? `
-                  <a class="nav-link active btnAgregarHeader" href="auth/account.html">
+                  <a class="nav-link active btnAgregarHeader" href="./cuenta.html">
                     ${user.name ? `Hola, ${user.name}` : "Cuenta"}
                   </a>
                   <a id="logoutBtn" class="nav-link active btnAgregarHeader" href="#">Cerrar sesión</a>
