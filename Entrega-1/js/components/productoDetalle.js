@@ -125,8 +125,6 @@
   `;
 
   document.getElementById("btnAdd")?.addEventListener("click", () => {
-    
-    Cart.add(p,1);
     alert(`Agregado: ${p.Nombre}`);
   });
 })();
