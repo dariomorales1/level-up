@@ -55,7 +55,6 @@ function renderCards(lista, containerId="productosContainer") {
             showToast(p.Nombre)
         })
 
-
         contenedor.appendChild(card);
         
     });
