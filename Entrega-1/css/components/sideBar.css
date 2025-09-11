@@ -1,0 +1,30 @@
+.sideBar {
+    display: Flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--colorGrisOscuro);
+    width: 160px;
+    height: 650px;
+    position:absolute;
+    gap: 5px;
+}
+
+.sidebarbtn {
+    width: 150px;
+    height: 50px;
+    background-color: var(--colorVerde);
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideBarbtn>strong {
+    font-weight: 400;
+
+}
