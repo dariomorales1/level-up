@@ -1,0 +1,77 @@
+#formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#formProducto textarea::placeholder, #formProducto input::placeholder {
+    color: #999;
+    font-style: italic;
+    opacity: 1; /* algunos navegadores aplican transparencia, esto la fuerza a 100% */
+}
+
+#formProducto label {
+    color: var(--colorVerde);
+}
+
+#formProducto input,  #formProducto textarea, #formProducto select{
+    background-color: var(--colorNegro);
+}
+
+#formProducto select option {
+    color: white;
+}
+
+.botonPpal {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--colorVerde);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, var(--colorNegro) 50%, var(--colorVerde) 50%);
+    background-position: 100%;
+    background-size: 400%;
+    color: var(--colorNegro);
+    font-weight: bold;
+    transition: 
+        background 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+    z-index: 10;
+}
+
+.botonPpal:hover {
+    background-position: 0;
+    color: var(--colorVerde);
+}
+
+.botonScd {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--colorVerde);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-image: linear-gradient(45deg, var(--colorVerde) 50%, var(--colorNegro) 50%);
+    background-position: 100%;
+    background-size: 400%;
+    color: var(--colorVerde);
+    font-weight: bold;
+    transition: 
+        background 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+    z-index: 10;
+}
+
+.botonScd:hover {
+    background-position: 0;
+    color: var(--colorNegro);
+}
