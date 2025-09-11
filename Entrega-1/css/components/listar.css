@@ -1,0 +1,123 @@
+/* Centrado general del contenedor del listado */
+#listContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Contenedor principal del listado */
+#listContainer section.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: var(--colorGrisOscuro);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Título */
+#listContainer h2.title {
+    color: var(--colorVerde);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Buscador y filtros */
+#listContainer label {
+    color: var(--colorVerde);
+    font-weight: 500;
+}
+
+#listContainer input {
+    border: 1px solid var(--colorVerde);
+    background-color: var(--colorGrisOscuro);
+}
+
+#listContainer input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+#listContainer select {
+    border: 1px solid var(--colorVerde);
+    border-radius: 5px;
+    padding: 6px;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Tabla */
+#listContainer table {
+    border: 1px solid var(--colorVerde);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#listContainer thead {
+    background-color: var(--colorNegro);
+}
+
+#listContainer thead th {
+    background-color: var(--colorNegro);
+    color: var(--colorVerde);
+    
+    border: 1px solid var(--colorVerde);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+#listContainer tbody tr:hover {
+    background-color: rgba(0, 255, 128, 0.1); /* un verde translúcido */
+    transition: background 0.2s ease-in-out;
+}
+
+#listContainer tbody td {
+    background-color: var(--colorNegro);
+    color: #eee;
+    vertical-align: middle;
+    
+    border: 1px solid var(--colorVerde);
+}
+
+/* Botones (reutilizan estilos de crear) */
+#listContainer .btn {
+    border: 1px solid var(--colorVerde);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#btnClear {
+    background-image: linear-gradient(45deg, var(--colorNegro) 50%, var(--colorVerde) 50%);
+    background-position: 100%;
+    background-size: 400%;
+    color: var(--colorNegro);
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#btnClear:hover {
+    background-position: 0;
+    color: var(--colorVerde);
+}
+
+#btnRefrescar {
+    background-image: linear-gradient(45deg, var(--colorVerde) 50%, var(--colorNegro) 50%);
+    background-position: 100%;
+    background-size: 400%;
+    color: var(--colorVerde);
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#btnRefrescar:hover {
+    background-position: 0;
+    color: var(--colorNegro);
+}
+
+/* Info de total */
+#totalInfo {
+    color: var(--colorVerde);
+    font-style: italic;
+}

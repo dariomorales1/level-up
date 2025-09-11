@@ -29,6 +29,10 @@
     gap: 5px;
 }
 
+#logoImage {
+    background-image: url(../../assets/icons/icono.png);
+}
+
 .logoName {
     font-family: var(--font-encabezado);
     font-weight: bold;
