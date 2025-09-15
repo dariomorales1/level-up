@@ -5,6 +5,8 @@ Incluye páginas de autenticación, catálogo, detalle de producto, carrito y se
 Los datos de productos se cargan desde utilidades en js/utils/.
 
 ## 🗂️ Estructura del Proyecto
+
+```
 Entrega-1/
 ├── assets/
 ├── css/
@@ -20,8 +22,7 @@ Entrega-1/
 └── catalogo.html
 └── cuenta.html
 └── producto.html
-
-
+```
 
 
 ## 🧰 Stack Tecnológico
