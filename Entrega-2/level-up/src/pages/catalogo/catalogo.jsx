@@ -1,33 +1,30 @@
 import React from "react";
 import "./catalogoStyles.css";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { Card } from "../components/card/card.jsx";
+import { CardsContainer } from "../../components/cardsContainer/cardsContainer.jsx";
+import listaProductos from "../../assets/listaProductos.jsx";
+import { HeaderNav } from "../../components/header/header.jsx";
+import * as bootstrap from 'bootstrap'
 
 export function Catalogo () {
     return (
-        <div class="page">
-        <div id="headerPpal"></div>
-        <main>
-            <div id="navbarProductos"></div>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <div id="carrousel"></div>
-                    <hr/>
-                    <h1 class="titulo">Productos</h1>
-                    <hr/>
-                    <div class="productosContainer" id="productosContainer"></div>
-                    
+        <div className="page-container">
+            <HeaderNav loggedIn={false} userName={""} rightSlot={null} />
+            <main className="container catalogoContainer">
+                <div className="line"></div>
+                <h1 className="title">Catalogo</h1>
+                <div className="line"></div>
+                <div className="row">
+                    <div className="col-2"></div>
+                    <div className="col-8">
+                        <CardsContainer productos={listaProductos}/>
+                    </div>
+                    <div className="col-2"></div>
                 </div>
-                <div class="col-2"></div>
-            </div>
-
-        </main>
+                
+            </main>
 
 
-        
-        <div id="app-footer"></div>
-    </div>
+            
+        </div>
     );
 }

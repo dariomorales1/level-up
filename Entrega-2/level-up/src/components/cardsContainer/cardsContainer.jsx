@@ -1,26 +1,28 @@
 import "./cardsContainerStyles.css"
-import { listaProductos } from "assets/listaProductos.jsx";
+import  listaProductos  from "../../assets/listaProductos.jsx";
 import React from "react";
 import { Card } from "../card/card.jsx";
 
 
 
-export function CardsContainer () {
+export function CardsContainer ({ productos = [] }) {
     return (
+        <div className="cardsContainer">
+            {listaProductos.length === 0 ? (
+                <p>No hay productos.</p>
+            ) : (
+                listaProductos.map((p) => (
+                <Card
+                    key={p["Código"] || p.id}
+                    nombre={p.Nombre}
+                    imgLink={p.imgLink}
+                    descripcionCorta={p["Descripción Corta"]}
+                    precio={p.Precio}
+                />
+                ))
+            )}
 
-        {listaProductos.length === 0 ? (
-            <p>No hay productos.</p>
-        ) : (
-            productos.map((p) => (
-            <Card
-                key={p.id}
-                nombre={p.nombre}
-                imgLink={p.imgLink}              // si usas /imagenes/... deben estar en /public
-                descripcionCorta={p.descripcionCorta}
-                precio={p.precio}
-            />
-            ))
-        )}
-
+        </div>
+        
     );
 }
