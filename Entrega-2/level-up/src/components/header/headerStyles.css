@@ -1,0 +1,89 @@
+.headerPpal {
+    background-color: var(--colorGrisOscuro);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbarPpal {
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbarFirstContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#logoImage {
+    background-image: url(../../assets/icons/icono.png);
+}
+
+.logoName {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    font-family: var(--font-encabezado);
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--colorBlanco);
+    transition: 
+        0.3s ease color;
+}
+
+.logoName:hover {
+    color: var(--colorBlanco);
+}
+
+
+.navBarButtons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-principal);
+}
+
+.navBarButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 580px) {
+    .navBarButtonsContainer {
+        flex-direction: column;
+        gap: 10px;  
+    }
+
+    .btnAgregarHeader {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .logoName {
+        font-size: 0;
+    }
+}
+
+
+
+

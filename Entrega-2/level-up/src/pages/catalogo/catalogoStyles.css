@@ -1,0 +1,21 @@
+.catalogoContainer {
+    padding-top: 90px;
+    width: 100vw;
+    background-color: var(--colorNegro);
+}
+
+.col-2 {
+    padding: 0;
+}
+
+.line {
+    width: 80%;
+    height: 1px;
+    background-color: var(--colorVerde);
+    margin: 20px auto;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+}

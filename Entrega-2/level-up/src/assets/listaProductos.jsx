@@ -1,4 +1,4 @@
-export default listaProductos = [
+const listaProductos = [
     {
         "Código": "JM001",
         "Nombre": "Catan",
@@ -1191,3 +1191,5 @@ export default listaProductos = [
     }
 ]
 
+
+export default listaProductos;

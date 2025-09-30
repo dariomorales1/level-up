@@ -13,7 +13,7 @@ export function Card ({nombre, imgLink, descripcionCorta, precio} = {}) {
                     <p className="precio"><strong>Precio: $</strong>{precio}</p>
                 </div>
             </div>
-            <div class="cardFooter">
+            <div className="cardFooter">
                 <a className="btnAgregar">Añadir al carrito</a>
             </div>
         </div>

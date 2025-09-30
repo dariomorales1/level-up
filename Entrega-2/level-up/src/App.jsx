@@ -1,24 +1,18 @@
-import { useState } from 'react'
+import { Routes, Route, Link } from "react-router-dom";
+import { Home } from "./pages/home/home.jsx";
+import { Catalogo } from "./pages/catalogo/catalogo.jsx";
+import "./App.css";
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import './App.css'
-import {Home} from './pages/home/home.jsx'
-import {Catalogo} from './assets/catalogo.jsx'
-import React from 'react'
-
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const valorInicial = 10;
 
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home valorInicial={100} />} />
-          <Route path="/catalogo" element={<Catalogo />} />
-        </Routes>
-      </Router>
+    <div className="app">
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/catalogo" element={<Catalogo />} />
+        <Route path="*" element={<h2>404 - Página no encontrada</h2>} />
+      </Routes>
     </div>
-  )
+  );
 }
-
-export default App
